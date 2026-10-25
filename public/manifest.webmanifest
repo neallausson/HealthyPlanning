@@ -1,0 +1,12 @@
+{
+  "name": "Healthy Planning",
+  "short_name": "Healthy",
+  "start_url": "/#today",
+  "display": "standalone",
+  "background_color": "#fff8ee",
+  "theme_color": "#f6b93b",
+  "lang": "fr",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

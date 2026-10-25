@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f6b93b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Healthy">
+  <title>Healthy Planning</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.svg">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body>
+  <div id="splash" class="splash">💛</div>
+
+  <section id="login" class="login" hidden>
+    <form id="login-form" class="login-card">
+      <div class="login-logo">💛</div>
+      <h1>Healthy Planning</h1>
+      <p class="muted">Mon petit journal du quotidien</p>
+      <label class="field">
+        <span>Mot de passe</span>
+        <input type="password" id="login-password" autocomplete="current-password" required>
+      </label>
+      <button class="btn btn-primary btn-block" type="submit">Entrer ✨</button>
+      <p id="login-error" class="error" role="alert"></p>
+      <p class="motto small">Pas besoin d'être parfaite : l'important est la régularité et les notes.</p>
+    </form>
+  </section>
+
+  <div id="app" hidden>
+    <header class="topbar">
+      <a class="brand" href="#today"><span class="brand-heart">💛</span> Healthy Planning</a>
+      <span id="sync" class="sync" aria-live="polite"></span>
+    </header>
+    <nav class="tabs" id="tabs" aria-label="Navigation">
+      <a href="#today" data-tab="today"><span class="tab-ico">☀️</span><span class="tab-lbl">Aujourd'hui</span></a>
+      <a href="#journal" data-tab="journal"><span class="tab-ico">📝</span><span class="tab-lbl">Journal</span></a>
+      <a href="#calendar" data-tab="calendar"><span class="tab-ico">📅</span><span class="tab-lbl">Calendrier</span></a>
+      <a href="#recap" data-tab="recap"><span class="tab-ico">📊</span><span class="tab-lbl">Récap</span></a>
+      <a href="#foods" data-tab="foods"><span class="tab-ico">🥗</span><span class="tab-lbl">Aliments</span></a>
+      <a href="#options" data-tab="options"><span class="tab-ico">⚙️</span><span class="tab-lbl">Options</span></a>
+    </nav>
+    <main id="view" class="view"></main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="modal" class="modal"></dialog>
+</body>
+</html>

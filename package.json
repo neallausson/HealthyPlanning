@@ -1,0 +1,13 @@
+{
+  "name": "healthy-planning",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Suivi quotidien healthy planning : journal, calendrier, récap mensuel et export.",
+  "type": "module",
+  "scripts": {
+    "dev": "node dev-server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
